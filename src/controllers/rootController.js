@@ -88,9 +88,14 @@ export const postUploadProduct = async (req, res) => {
   const imageFile = req.file;
 
   try {
-    // 임시 RWA 토큰 생성 (실제로는 블록체인에서 발급받을 것)
-    // const rwaToken = `RWA-${Date.now()}-${Math.floor(Math.random() * 1000000)}`;
-    const {address, result} = await deployRWA(req.body.address, {name: req.body.contractName, symbol: req.body.symbol});
+    // 블록체인에서 RWA 토큰 발급
+    const { address, result } = await deployRWA(req.body.address, {
+      name: req.body.contractName,
+      symbol: req.body.symbol,
+    });
+
+    // 컨트랙트 주소를 rwaToken으로 사용
+    const rwaToken = address;
 
     let imageUrl = null;
     if (imageFile) {
