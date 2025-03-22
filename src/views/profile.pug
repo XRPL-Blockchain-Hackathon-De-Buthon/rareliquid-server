@@ -1,0 +1,30 @@
+extends base
+include mixins/product
+
+block content
+  .profile-header
+    if user.avatarUrl
+      img.profile-avatar(src=user.avatarUrl, alt=user.name)
+    else
+      .profile-avatar-placeholder
+        i.fas.fa-user
+    
+    .profile-info
+      h1.profile-name= user.name
+      p.profile-email= user.email
+      if user.walletAddress
+        p.wallet-address
+          span 지갑 주소: 
+          code= user.walletAddress
+  
+  .profile-actions
+    a.btn-primary(href="/product/upload") 상품 등록하기
+  
+  .my-products
+    h2.section-title 내 상품 목록
+    .products-grid
+      if userProducts && userProducts.length > 0
+        each product in userProducts
+          +productCard(product)
+      else
+        p.no-products 등록한 상품이 없습니다.
