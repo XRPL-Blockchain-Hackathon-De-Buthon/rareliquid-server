@@ -1,0 +1,537 @@
+.page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .page .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1920px;
+    height: 1600px;
+    position: relative;
+  }
+  
+  .page .overlap {
+    position: absolute;
+    width: 1920px;
+    height: 1566px;
+    top: 353px;
+    left: 0;
+  }
+  
+  .page .background {
+    position: absolute;
+    width: 1920px;
+    height: 1247px;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .page .text-wrapper {
+    position: absolute;
+    top: 55px;
+    left: 880px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: -0.72px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .page .group {
+    position: absolute;
+    width: 1787px;
+    height: 672px;
+    top: 161px;
+    left: 66px;
+  }
+  
+  .page .card {
+    position: absolute;
+    width: 415px;
+    height: 672px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .nike {
+    position: absolute;
+    width: 56px;
+    height: 23px;
+    top: 436px;
+    left: 4px;
+  }
+  
+  .page .nike-x-supreme-air {
+    position: absolute;
+    width: 380px;
+    height: 59px;
+    top: 484px;
+    left: 4px;
+  }
+  
+  .page .element {
+    position: absolute;
+    width: 154px;
+    height: 33px;
+    top: 572px;
+    left: 4px;
+  }
+  
+  .page .overlap-group {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 2px;
+    background-color: #e8ecf3;
+    border-radius: 10.17px;
+    background-image: url(./img/image-1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .page .view {
+    top: 629px;
+    position: absolute;
+    width: 108px;
+    height: 43px;
+    left: 0;
+  }
+  
+  .page .div-wrapper {
+    position: relative;
+    width: 106px;
+    height: 43px;
+    background-color: #00b64c;
+    border-radius: 10.17px;
+  }
+  
+  .page .text-wrapper-2 {
+    width: 106px;
+    height: 43px;
+    top: 0;
+    color: #ffffff;
+    font-size: 26.4px;
+    text-align: center;
+    letter-spacing: -0.53px;
+    position: absolute;
+    left: 0;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .page .card-2 {
+    position: absolute;
+    width: 413px;
+    height: 672px;
+    top: 0;
+    left: 462px;
+  }
+  
+  .page .text-wrapper-3 {
+    top: 429px;
+    color: #000000;
+    position: absolute;
+    width: 407px;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 30.5px;
+    letter-spacing: -0.61px;
+    line-height: normal;
+  }
+  
+  .page .p {
+    top: 478px;
+    color: #7f7f7f;
+    position: absolute;
+    width: 407px;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 30.5px;
+    letter-spacing: -0.61px;
+    line-height: normal;
+  }
+  
+  .page .text-wrapper-4 {
+    width: 407px;
+    top: 567px;
+    color: #000000;
+    font-size: 32.5px;
+    letter-spacing: -0.65px;
+    position: absolute;
+    left: 0;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .page .overlap-2 {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    background-color: #e8f3f0;
+    border-radius: 10.17px;
+    background-image: url(./img/image-3-2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .page .card-3 {
+    position: absolute;
+    width: 413px;
+    height: 642px;
+    top: 0;
+    left: 921px;
+  }
+  
+  .page .text-wrapper-5 {
+    width: 407px;
+    top: 537px;
+    color: #000000;
+    font-size: 32.5px;
+    letter-spacing: -0.65px;
+    position: absolute;
+    left: 0;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .page .overlap-3 {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    background-color: #f3f1e8;
+    border-radius: 10.17px;
+    background-image: url(./img/image-2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .page .overlap-group-wrapper {
+    top: 599px;
+    position: absolute;
+    width: 108px;
+    height: 43px;
+    left: 0;
+  }
+  
+  .page .card-4 {
+    position: absolute;
+    width: 413px;
+    height: 672px;
+    top: 0;
+    left: 1380px;
+  }
+  
+  .page .overlap-4 {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    background-color: #f3e8e8;
+    border-radius: 10.17px;
+    background-image: url(./img/image-5.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .page .card-5 {
+    position: absolute;
+    width: 413px;
+    height: 639px;
+    top: 927px;
+    left: 70px;
+  }
+  
+  .page .image-wrapper {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    background-color: #f3e8ef;
+    border-radius: 10.17px;
+  }
+  
+  .page .image {
+    position: absolute;
+    width: 407px;
+    height: 320px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .page .text-wrapper-6 {
+    width: 407px;
+    top: 600px;
+    color: #000000;
+    font-size: 32.5px;
+    letter-spacing: -0.65px;
+    position: absolute;
+    left: 0;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .page .card-6 {
+    position: absolute;
+    width: 413px;
+    height: 606px;
+    top: 927px;
+    left: 530px;
+  }
+  
+  .page .img-wrapper {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    background-color: #e9e8f3;
+    border-radius: 10.17px;
+  }
+  
+  .page .card-7 {
+    position: absolute;
+    width: 413px;
+    height: 606px;
+    top: 927px;
+    left: 989px;
+  }
+  
+  .page .overlap-5 {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    background-color: #e8ecf3;
+    border-radius: 10.17px;
+  }
+  
+  .page .card-8 {
+    position: absolute;
+    width: 413px;
+    height: 606px;
+    top: 927px;
+    left: 1448px;
+  }
+  
+  .page .overlap-6 {
+    position: absolute;
+    width: 407px;
+    height: 407px;
+    top: 0;
+    left: 0;
+    background-color: #e8f3f1;
+    border-radius: 10.17px;
+  }
+  
+  .page .header {
+    position: absolute;
+    width: 1824px;
+    height: 311px;
+    top: 36px;
+    left: 60px;
+    background-color: transparent;
+  }
+  
+  .page .header-RARELIQUID {
+    position: absolute;
+    top: 0;
+    left: 19px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-HOME {
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-NEW {
+    position: absolute;
+    top: 0;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-BEST {
+    position: absolute;
+    top: 19px;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-BRAND {
+    position: absolute;
+    top: 38px;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-MEN {
+    position: absolute;
+    top: 0;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-WOMEN {
+    position: absolute;
+    top: 19px;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-UNISEX {
+    position: absolute;
+    top: 38px;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-SHOES {
+    position: absolute;
+    top: 0;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-CLOTHES {
+    position: absolute;
+    top: 19px;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-LUXURY {
+    position: absolute;
+    top: 38px;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .icon {
+    position: absolute;
+    width: 159px;
+    height: 24px;
+    top: 2px;
+    left: 1641px;
+  }
+  
+  .page .icon-menu {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 135px;
+  }
+  
+  .page .icon-search {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .icon-shop {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 45px;
+  }
+  
+  .page .icon-profile {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 90px;
+  }
+  
+  .page .img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+  }
+  
