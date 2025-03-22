@@ -5,6 +5,7 @@ html(lang="ko")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title= pageTitle ? `${pageTitle} | RARELIQUID` : "RARELIQUID"
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
     link(rel="stylesheet", href="/css/styles.css")
     block styles
   body
@@ -18,6 +19,8 @@ html(lang="ko")
           if loggedIn
             a.user-icon(href="/auth/profile")
               img.avatar(src="/images/icon_profile.png", alt="프로필")
+            a.user-icon.logout-icon(href="/auth/logout")
+              i.fas.fa-sign-out-alt
           else
             a.login-btn(href="/auth/google") 로그인
     
@@ -28,6 +31,5 @@ html(lang="ko")
       .container
         p &copy; 2025 RARELIQUID. All rights reserved.
     
-    script(src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous")
     script(src="/js/main.js") 
     block scripts
