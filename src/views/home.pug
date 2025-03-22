@@ -2,22 +2,43 @@ extends base
 include mixins/product
 
 block content
-  .home-banner
-    h1.banner-title 최고의 한정판 상품을 만나보세요
-    p.banner-text 블록체인으로 검증된 진품만을 제공합니다
-  
-  .search-container
-    input#search-input(type="text", placeholder="상품 검색...")
-    button#search-button 검색
-  
-  .products-container
-    h2.section-title 최신 상품
-    .products-grid#products-grid
-      if products && products.length > 0
-        each product in products
-          +productCard(product)
-      else
-        p.no-products 등록된 상품이 없습니다.
+  .home-container
+    .search-container
+      input#search-input(type="text", placeholder="상품 검색...")
+      button#search-button
+        img(src="/images/icon_search.png", alt="검색 아이콘")
+    
+    .filter-container
+      .filter-group
+        label.filter-label(for="category-filter") 카테고리
+        select#category-filter.filter-select
+          option(value="all") 전체
+          option(value="shoes") 신발
+          option(value="clothing") 의류
+          option(value="accessories") 액세서리
+          option(value="collectibles") 수집품
+      
+      .filter-group
+        label.filter-label(for="price-filter") 가격순
+        select#price-filter.filter-select
+          option(value="default") 기본순
+          option(value="low-to-high") 낮은가격순
+          option(value="high-to-low") 높은가격순
+      
+      .filter-group
+        label.filter-label(for="date-filter") 등록일
+        select#date-filter.filter-select
+          option(value="newest") 최신순
+          option(value="oldest") 오래된순
+    
+    .products-container
+      h2.section-title 최신 상품
+      .products-grid#products-grid
+        if products && products.length > 0
+          each product in products
+            +productCard(product)
+        else
+          p.no-products 등록된 상품이 없습니다.
 
 block scripts
   script(src="/js/search.js")

@@ -32,8 +32,8 @@ const rootRouter = express.Router();
 
 rootRouter.get("/", home);
 rootRouter.get("/search", search);
-rootRouter.get("/product/:id", getProductDetail);
 rootRouter.get("/auth/profile", isLoggedIn, getProfile);
+// 구체적인 경로를 먼저 배치
 rootRouter.get("/product/upload", isLoggedIn, getUploadProduct);
 rootRouter.post(
   "/product/upload",
@@ -41,5 +41,7 @@ rootRouter.post(
   upload.single("image"),
   postUploadProduct
 );
+// 와일드카드 경로를 나중에 배치
+rootRouter.get("/product/:id", getProductDetail);
 
 export default rootRouter;

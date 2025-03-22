@@ -2,29 +2,69 @@ extends base
 include mixins/product
 
 block content
-  .profile-header
-    if user.avatarUrl
-      img.profile-avatar(src=user.avatarUrl, alt=user.name)
-    else
-      .profile-avatar-placeholder
-        i.fas.fa-user
-    
-    .profile-info
-      h1.profile-name= user.name
-      p.profile-email= user.email
-      if user.walletAddress
-        p.wallet-address
-          span 지갑 주소: 
-          code= user.walletAddress
+  .page
+    .div
+      .overlap
+        .background
+        h1.text-wrapper 마이 리스트
+        
+        if userProducts && userProducts.length > 0
+          .group
+            each product, index in userProducts.slice(0, 4)
+              - const cardClass = index === 0 ? 'card' : (index === 1 ? 'card-2' : (index === 2 ? 'card-3' : 'card-4'))
+              div(class=cardClass)
+                if product.category
+                  .text-wrapper-3= product.category
+                else
+                  .text-wrapper-3 Brand
+                
+                p.p= product.name
+                
+                - const priceClass = index === 0 ? 'element' : (index === 2 ? 'text-wrapper-5' : 'text-wrapper-4')
+                div(class=priceClass)= `${product.price.toLocaleString()}원`
+                
+                - const overlapClass = index === 0 ? 'overlap-group' : (index === 1 ? 'overlap-2' : (index === 2 ? 'overlap-3' : 'overlap-4'))
+                div(class=overlapClass)
+                  if product.imageUrl
+                    img.image(src=product.imageUrl, alt=product.name)
+                
+                - const viewClass = index === 2 ? 'overlap-group-wrapper' : 'view'
+                div(class=viewClass)
+                  .div-wrapper
+                    .text-wrapper-2 판매중
+          
+          // 추가 상품 카드 (4개 이상인 경우)
+          each product, index in userProducts.slice(4, 8)
+            - const cardClass = index === 0 ? 'card-5' : (index === 1 ? 'card-6' : (index === 2 ? 'card-7' : 'card-8'))
+            div(class=cardClass)
+              .text-wrapper-3= product.category || 'Brand'
+              p.p= product.name
+              
+              - const priceClass = index === 0 ? 'text-wrapper-6' : 'text-wrapper-4'
+              div(class=priceClass)= `${product.price.toLocaleString()}원`
+              
+              - const imgWrapperClass = index === 0 ? 'image-wrapper' : (index === 1 ? 'img-wrapper' : (index === 2 ? 'overlap-5' : 'overlap-6'))
+              div(class=imgWrapperClass)
+                if product.imageUrl
+                  img.image(src=product.imageUrl, alt=product.name)
+        else
+          p.no-products 등록한 상품이 없습니다.
+        
+        .profile-actions
+          a.btn-primary(href="/product/upload") 상품 등록하기
   
-  .profile-actions
-    a.btn-primary(href="/product/upload") 상품 등록하기
-  
-  .my-products
-    h2.section-title 내 상품 목록
-    .products-grid
-      if userProducts && userProducts.length > 0
-        each product in userProducts
-          +productCard(product)
+  .profile-container
+    .profile-header
+      if user.avatarUrl
+        img.profile-avatar(src=user.avatarUrl, alt=user.name)
       else
-        p.no-products 등록한 상품이 없습니다.
+        .profile-avatar-placeholder
+          i.fas.fa-user
+      
+      .profile-info
+        h1.profile-name= user.name
+        p.profile-email= user.email
+        if user.walletAddress
+          p.wallet-address
+            span 지갑 주소: 
+            code= user.walletAddress

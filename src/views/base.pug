@@ -4,28 +4,49 @@ html(lang="ko")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title= pageTitle ? `${pageTitle} | RARELIQUID` : "RARELIQUID"
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap")
     link(rel="stylesheet", href="/css/styles.css")
     block styles
-  body(style=`background-image: url('/images/background.png'); background-size: cover; background-attachment: fixed;`)
+  body
+    .background-container
     header.header
-      .container
-        a.logo(href="/") RARE
-          span.highlight LIQUID
-        nav.main-nav
-          ul
-            li
-              a(href="/") 홈
-            li
-              a(href="/search") 검색
-          .user-nav
-            if loggedIn
-              a.user-icon(href="/auth/profile")
-                if user.avatarUrl
-                  img.avatar(src=user.avatarUrl, alt=user.name)
-                else
-                  i.fas.fa-user
-            else
-              a.login-btn(href="/auth/google") 로그인
+      .container.header-container
+        .left-menu
+          a.logo(href="/") RARELIQUID
+          nav.main-nav
+            ul
+              li
+                a(href="/") HOME
+              li
+                a(href="/") NEW
+              li
+                a(href="/") BEST
+              li
+                a(href="/") BRAND
+              li
+                a(href="/") MEN
+              li
+                a(href="/") WOMEN
+              li
+                a(href="/") UNISEX
+              li
+                a(href="/") SHOES
+              li
+                a(href="/") CLOTHES
+              li
+                a(href="/") LUXURY
+        .user-nav
+          if loggedIn
+            a.user-icon(href="/auth/profile")
+              img.avatar(src="/images/icon_profile.png", alt="프로필")
+          else
+            a.login-btn(href="/auth/google") 로그인
+          a.icon-shop(href="/") 
+            img(src="/images/icon_shop.png", alt="장바구니")
+          a.icon-search(href="/")
+            img(src="/images/icon_search.png", alt="검색")
+          a.icon-menu(href="/")
+            img(src="/images/icon_menu.svg", alt="메뉴")
     
     main.main
       .container
@@ -35,5 +56,6 @@ html(lang="ko")
       .container
         p &copy; 2025 RARELIQUID. All rights reserved.
     
+    script(src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous")
     script(src="/js/main.js") 
     block scripts
