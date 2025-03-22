@@ -1,6 +1,7 @@
 // src/controllers/rootController.js
 import Product from "../models/Product.js";
 import User from "../models/User.js";
+import { deployRWA } from "../blockchain/deploy.js";
 
 export const home = async (req, res) => {
   try {
@@ -88,7 +89,8 @@ export const postUploadProduct = async (req, res) => {
 
   try {
     // 임시 RWA 토큰 생성 (실제로는 블록체인에서 발급받을 것)
-    const rwaToken = `RWA-${Date.now()}-${Math.floor(Math.random() * 1000000)}`;
+    // const rwaToken = `RWA-${Date.now()}-${Math.floor(Math.random() * 1000000)}`;
+    const {address, result} = await deployRWA(req.body.address, {name: req.body.contractName, symbol: req.body.symbol});
 
     let imageUrl = null;
     if (imageFile) {
