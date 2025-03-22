@@ -1,0 +1,12 @@
+mixin productCard(product)
+  .product-card
+    a(href=`/product/${product.rwaToken}`)
+      .product-image
+        if product.imageUrl
+          img(src=product.imageUrl, alt=product.name)
+        else
+          .no-image 이미지 없음
+      .product-info
+        h3.product-name= product.name
+        p.product-price= `${product.price.toLocaleString()}원`
+        p.product-category= product.category || '카테고리 없음'

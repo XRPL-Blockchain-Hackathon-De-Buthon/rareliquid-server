@@ -1,0 +1,29 @@
+extends base
+
+block content
+  .product-detail
+    .product-images
+      if product.imageUrl
+        img.main-image(src=product.imageUrl, alt=product.name)
+      else
+        .no-image 이미지 없음
+    
+    .product-info
+      h1.product-title= product.name
+      p.product-price= `${product.price.toLocaleString()}원`
+      if product.category
+        p.product-category= product.category
+      
+      .product-description
+        h2 상품 설명
+        p= product.description
+      
+      .product-actions
+        button#buy-button.btn-primary 구매하기
+        
+      .product-token
+        h3 RWA 토큰 정보
+        p.token-id= product.rwaToken
+
+block scripts
+  script(src="/js/product-detail.js")

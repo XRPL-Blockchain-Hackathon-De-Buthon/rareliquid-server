@@ -1,0 +1,30 @@
+extends base
+
+block content
+  .upload-container
+    h1.page-title 상품 등록
+    
+    form.upload-form(action="/product/upload", method="POST", enctype="multipart/form-data")
+      .form-group
+        label(for="name") 상품명
+        input#name(type="text", name="name", required)
+      
+      .form-group
+        label(for="description") 상품 설명
+        textarea#description(name="description", rows="5", required)
+      
+      .form-group
+        label(for="price") 가격 (원)
+        input#price(type="number", name="price", required, min="0")
+      
+      .form-group
+        label(for="category") 카테고리
+        input#category(type="text", name="category")
+      
+      .form-group
+        label(for="image") 상품 이미지
+        input#image(type="file", name="image", accept="image/*")
+      
+      .form-actions
+        button.btn-primary(type="submit") 등록하기
+        a.btn-secondary(href="/auth/profile") 취소

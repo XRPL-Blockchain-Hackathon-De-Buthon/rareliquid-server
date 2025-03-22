@@ -1,0 +1,39 @@
+doctype html
+html(lang="ko")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= pageTitle ? `${pageTitle} | RARELIQUID` : "RARELIQUID"
+    link(rel="stylesheet", href="/css/styles.css")
+    block styles
+  body(style=`background-image: url('/images/background.png'); background-size: cover; background-attachment: fixed;`)
+    header.header
+      .container
+        a.logo(href="/") RARE
+          span.highlight LIQUID
+        nav.main-nav
+          ul
+            li
+              a(href="/") 홈
+            li
+              a(href="/search") 검색
+          .user-nav
+            if loggedIn
+              a.user-icon(href="/auth/profile")
+                if user.avatarUrl
+                  img.avatar(src=user.avatarUrl, alt=user.name)
+                else
+                  i.fas.fa-user
+            else
+              a.login-btn(href="/auth/google") 로그인
+    
+    main.main
+      .container
+        block content
+    
+    footer.footer
+      .container
+        p &copy; 2025 RARELIQUID. All rights reserved.
+    
+    script(src="/js/main.js") 
+    block scripts
