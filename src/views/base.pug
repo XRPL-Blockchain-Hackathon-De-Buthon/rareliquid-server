@@ -17,6 +17,8 @@ html(lang="ko")
             span.logo-liquid LIQUID
         .user-nav
           if loggedIn
+            button#connect-wallet-btn.wallet-btn 지갑 연결
+            span#wallet-address.wallet-address
             a.user-icon(href="/auth/profile")
               img.avatar(src="/images/icon_profile.png", alt="프로필")
             a.user-icon.logout-icon(href="/auth/logout")
@@ -32,4 +34,6 @@ html(lang="ko")
         p &copy; 2025 RARELIQUID. All rights reserved.
     
     script(src="/js/main.js") 
+    script(src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js")
+    script(src="/js/wallet.js")
     block scripts
