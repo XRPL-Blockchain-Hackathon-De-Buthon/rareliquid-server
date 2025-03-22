@@ -1,15 +1,9 @@
 // src/routers/authRouter.js
 import express from "express";
 import passport from "passport";
-import {
-  logout,
-  googleCallback,
-} from "../controllers/authController.js";
-import { isLoggedIn } from "../middlewares/auth.js";
+import { logout, googleCallback } from "../controllers/authController.js";
 
 const authRouter = express.Router();
-
-
 
 // Google OAuth routes
 authRouter.get(
@@ -25,7 +19,5 @@ authRouter.get(
 
 // Logout route
 authRouter.get("/logout", logout);
-
-
 
 export default authRouter;
