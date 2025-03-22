@@ -3,27 +3,79 @@ extends base
 block content
   .product-detail
     .product-images
-      if product.imageUrl
-        img.main-image(src=product.imageUrl, alt=product.name)
-      else
-        .no-image 이미지 없음
+      .product-main-image
+        if product.imageUrl
+          img(src=product.imageUrl, alt=product.name)
+        else
+          .no-image 이미지 없음
+        .icon-arrow
+          img.icon-arrow-back-ios(src="/images/icon-arrow-back-ios.svg")
+          img.icon-arrow-forward(src="/images/icon-arrow-forward.svg")
     
-    .product-info
-      h1.product-title= product.name
-      p.product-price= `${product.price.toLocaleString()}원`
-      if product.category
-        p.product-category= product.category
+    .product-info-detail
+      .productname
+        .product-brand= product.category || "Brand"
+        h1.product-title= product.name
+        p.product-subtitle= product.description
+        img.icon-heart(src="/images/icon-heart.png")
       
-      .product-description
-        h2 상품 설명
-        p= product.description
+      .price
+        .text-wrapper-5 즉시 구매가
+        .product-price-detail= `${product.price.toLocaleString()}원`
       
-      .product-actions
-        button#buy-button.btn-primary 구매하기
+      .smalltext
+        .group-2
+          .text-wrapper 최근 거래가
+          p.element
+            span.span ▼
+            span.text-wrapper-2= ` ${(product.price * 0.9).toLocaleString()} (-10%)`
+          .text-wrapper-3= `${product.price.toLocaleString()}원`
         
-      .product-token
-        h3 RWA 토큰 정보
-        p.token-id= product.rwaToken
+        .group-3
+          .text-wrapper 발매가
+          .text-wrapper-3= `${(product.price * 0.8).toLocaleString()}원`
+        
+        .group-4
+          .text-wrapper 모델번호
+          .text-wrapper-3= product.rwaToken || "N/A"
+        
+        .group-5
+          .text-wrapper 출시일
+          - const date = new Date()
+          - const formattedDate = `${date.getFullYear().toString().substr(-2)}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}`
+          .text-wrapper-3= formattedDate
+        
+        .group-6
+          .text-wrapper 대표 색상
+          .text-wrapper-3 Dark grey / Blue
+      
+      .button
+        .button-buy
+          .div-wrapper
+            button#buy-button.text-wrapper-4 구매
+        .button-sell
+          .overlap-2
+            button.text-wrapper-4 판매
+    
+    .marketprice
+      .text-wrapper-7 시세
+      .marketpricetable
+        .overlap-group-3
+          .overlap-5
+            .rectangle-2
+            .text-wrapper-8 전체
+          .text-wrapper-8 1개월
+          .text-wrapper-9 3개월
+          .text-wrapper-10 6개월
+          .text-wrapper-11 12개월
+      
+      .img-pricetable
+        .overlap-6
+          img.vector(src="/images/vector-2.svg")
+          img.vector-2(src="/images/vector-1.svg")
+          .rectangle-3
+          p.element-2= `${product.price.toLocaleString()}원`
+          .ellipse
 
 block scripts
   script(src="/js/product-detail.js")
