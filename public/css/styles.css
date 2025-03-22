@@ -657,3 +657,15 @@ body {
   background-color: #f0f0f0;
   color: #333;
 }
+
+/* 상품 등록 페이지 */
+.form-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.upload-form {
+  width: 100%;
+}
