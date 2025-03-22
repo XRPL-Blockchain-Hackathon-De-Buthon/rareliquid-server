@@ -11,9 +11,9 @@ html(lang="ko")
     header.header
       .container.header-container
         .left-menu
-          a.logo(href="/") RARELIQUID
-          nav.main-nav
-            // 여기에 메뉴 아이템들 추가
+          a.logo(href="/") 
+            span.logo-rare RARE
+            span.logo-liquid LIQUID
         .user-nav
           if loggedIn
             a.user-icon(href="/auth/profile")
@@ -24,8 +24,6 @@ html(lang="ko")
             img(src="/images/icon_shop.png", alt="장바구니")
           a.icon-search(href="/")
             img(src="/images/icon_search.png", alt="검색")
-          a.icon-menu(href="/")
-            img(src="/images/icon_menu.svg", alt="메뉴")
     
     main.main
       block content
