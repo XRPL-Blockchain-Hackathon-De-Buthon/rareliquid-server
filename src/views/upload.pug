@@ -34,14 +34,17 @@ block content
                 
                 .form-group
                   label(for="size") 사이즈
-                  input#size(type="text", name="size", placeholder="예: 270, M, L 등")
+                  select#size(name="size", required)
+                    option(value="") 사이즈 선택
+                    each size in ['250', '255', '260', '265', '270', '275', '280', '285', '290']
+                      option(value=size)= size
                 
                 .form-group
                   label(for="image") 상품 이미지
                   .image-upload-container
-                    input#image(type="file", name="image", accept="image/*")
+                    input#image(type="file", name="image", accept="image/*", required)
                     .image-preview
-                      img#preview-image(src="#", alt="미리보기")
+                      img#preview-image(src="#", alt="미리보기", style="display: none;")
                 
                 .form-actions
                   button.btn-primary(type="submit") 등록하기
