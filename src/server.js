@@ -30,8 +30,8 @@ app.use(
     secret: process.env.SESSION_SECRET || "your-secret-key",
     resave: false,
     saveUninitialized: false,
-    store: MongoStore.create({ 
-      mongoUrl: process.env.MONGO_URI || "mongodb://mongo:27017/ecommerce" 
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGO_URI || "mongodb://mongo:27017/ecommerce",
     }),
     cookie: {
       maxAge: 1000 * 60 * 60 * 24, // 1 day
