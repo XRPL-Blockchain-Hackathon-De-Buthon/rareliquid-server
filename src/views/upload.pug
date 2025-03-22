@@ -1,6 +1,12 @@
 extends base
 
 block content
+  header.site-header
+    .container
+      .logo-container(style="position: relative;margin-top: 45px;")
+        img.header-bg(src="/images/header.png" alt="background" style="width: 100%; margin-bottom: -80px;")
+        a.site-logo(href="/" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);")
+
   .page
     .div
       .overlap

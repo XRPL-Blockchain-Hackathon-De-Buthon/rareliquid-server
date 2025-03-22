@@ -2,15 +2,15 @@ extends base
 include mixins/product
 
 block content
+  header.site-header
+    .container
+      .logo-container(style="position: relative;margin-top: 45px;")
+        img.header-bg(src="/images/header.png" alt="background" style="width: 100%; margin-bottom: -80px;")
+        a.site-logo(href="/" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);")
+        
   .profile-section.container-margin
     .container
       .profile-header
-        if user.avatarUrl
-          img.profile-avatar(src=user.avatarUrl, alt=user.name)
-        else
-          .profile-avatar-placeholder
-            i.fas.fa-user
-        
         .profile-info
           h1.profile-name= user.name
           p.profile-email= user.email
