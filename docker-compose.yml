@@ -15,7 +15,12 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-      - MONGO_URI=mongodb://mongo:27017/ecommerce
+      - MONGO_URI=${MONGO_URI}
+      - SESSION_SECRET=${SESSION_SECRET}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      # 외부에서 접근 가능한 URL (중요함)
+      - CALLBACK_URL=${CALLBACK_URL}
     depends_on:
       - mongo
     networks:
