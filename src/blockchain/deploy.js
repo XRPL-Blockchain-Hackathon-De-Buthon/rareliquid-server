@@ -1,10 +1,10 @@
 import { ContractFactory, JsonRpcProvider, Wallet, Contract } from "ethers";
-import NFT_ABI from '../artifacts/contracts/NonFungibleToken.sol/NonFungibleToken.json';
+import NFT_ABI from "./NFT_ABI.json" assert { type: "json" };
 
 // const RPC_URL = "https://rpc.xrplevm.org"; // devnet
 const RPC_URL = "https://rpc.testnet.xrplevm.org"; // testnet
 
-/** 
+/**
  *  @typedef {{name: string, symbol: string}} Metadata
  */
 
@@ -13,28 +13,36 @@ const RPC_URL = "https://rpc.testnet.xrplevm.org"; // testnet
  * @param {Metadata} metadata
  * @returns {Promise<{address: string, result: boolean}>}
  */
-export async function deployRWA(to, metadata){
-    const client = new JsonRpcProvider(RPC_URL);
-    const wallet = new Wallet(process.env.EVM_PK, client);
-    console.log(`Balance: ${await client.getBalance(wallet.address)}`);
+export async function deployRWA(to, metadata) {
+  const client = new JsonRpcProvider(RPC_URL);
+  const wallet = new Wallet(process.env.EVM_PK, client);
+  console.log(`Balance: ${await client.getBalance(wallet.address)}`);
 
-    const RWAFactory = new ContractFactory(NFT_ABI.abi, NFT_ABI.bytecode, wallet);
+  const RWAFactory = new ContractFactory(NFT_ABI.abi, NFT_ABI.bytecode, wallet);
 
-    try {
-        const contract = await RWAFactory.deploy(metadata.name, metadata.symbol, to);
-        const contractInst = new Contract(await contract.getAddress(), NFT_ABI.abi, wallet);
-        
-        const result = {
-            address: await contractInst.getAddress(),
-            result: true,
-        }
+  try {
+    const contract = await RWAFactory.deploy(
+      metadata.name,
+      metadata.symbol,
+      to
+    );
+    const contractInst = new Contract(
+      await contract.getAddress(),
+      NFT_ABI.abi,
+      wallet
+    );
 
-        console.log(result);
+    const result = {
+      address: await contractInst.getAddress(),
+      result: true,
+    };
 
-        return result;
-    } catch(err) {
-        console.log(err);
+    console.log(result);
 
-        throw(err)
-    }
+    return result;
+  } catch (err) {
+    console.log(err);
+
+    throw err;
+  }
 }

@@ -46,6 +46,18 @@ block content
                       option(value=size)= size
                 
                 .form-group
+                  label(for="address") 지갑 주소
+                  input#address(type="text", name="address", required, placeholder="본인의 지갑 주소를 입력하세요")
+                
+                .form-group
+                  label(for="contractName") 컨트랙트 이름
+                  input#contractName(type="text", name="contractName", required, placeholder="컨트랙트 이름을 입력하세요")
+                
+                .form-group
+                  label(for="symbol") 컨트랙트 심볼
+                  input#symbol(type="text", name="symbol", required, placeholder="컨트랙트 심볼을 입력하세요")
+                
+                .form-group
                   label(for="image") 상품 이미지
                   .image-upload-container
                     input#image(type="file", name="image", accept="image/*", required)

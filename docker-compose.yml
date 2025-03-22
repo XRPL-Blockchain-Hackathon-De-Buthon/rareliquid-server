@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   # Node.js/Express backend service
@@ -21,6 +21,7 @@ services:
       - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
       # 외부에서 접근 가능한 URL (중요함)
       - CALLBACK_URL=${CALLBACK_URL}
+      - EVM_PK=${EVM_PK}
     depends_on:
       - mongo
     networks:
