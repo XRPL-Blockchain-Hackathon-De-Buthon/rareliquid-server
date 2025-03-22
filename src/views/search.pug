@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= pageTitle
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1= pageTitle
+    
+    form(action="/search", method="get")
+      input(type="text", name="search_query", placeholder="상품 검색...")
+      button(type="submit") 검색
+    
+    if products && products.length > 0
+      div.products
+        each product in products
+          div.product
+            h2= product.name
+            p= product.description
+            p 가격: #{product.price}원
+            if product.imageUrl
+              img(src=product.imageUrl, alt=product.name)
+    else
+      p 검색 결과가 없습니다.
+    
+    a(href="/") 홈으로 돌아가기
