@@ -8,40 +8,19 @@ html(lang="ko")
     link(rel="stylesheet", href="/css/styles.css")
     block styles
   body
-    .background-container
     header.header
       .container.header-container
         .left-menu
           a.logo(href="/") RARELIQUID
           nav.main-nav
-            ul
-              li
-                a(href="/") HOME
-              li
-                a(href="/") NEW
-              li
-                a(href="/") BEST
-              li
-                a(href="/") BRAND
-              li
-                a(href="/") MEN
-              li
-                a(href="/") WOMEN
-              li
-                a(href="/") UNISEX
-              li
-                a(href="/") SHOES
-              li
-                a(href="/") CLOTHES
-              li
-                a(href="/") LUXURY
+            // 여기에 메뉴 아이템들 추가
         .user-nav
           if loggedIn
             a.user-icon(href="/auth/profile")
               img.avatar(src="/images/icon_profile.png", alt="프로필")
           else
             a.login-btn(href="/auth/google") 로그인
-          a.icon-shop(href="/") 
+          a.icon-shop(href="/")
             img(src="/images/icon_shop.png", alt="장바구니")
           a.icon-search(href="/")
             img(src="/images/icon_search.png", alt="검색")
@@ -49,8 +28,7 @@ html(lang="ko")
             img(src="/images/icon_menu.svg", alt="메뉴")
     
     main.main
-      .container
-        block content
+      block content
     
     footer.footer
       .container
