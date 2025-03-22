@@ -1,0 +1,42 @@
+:root {
+    --wwwsoscalemediasemystic: rgba(237, 242, 244, 1);
+    --www-soscalemedia-se-semantic-heading-2-underline-upper-font-family: "Arial",
+      Helvetica;
+    --www-soscalemedia-se-semantic-heading-2-underline-upper-font-weight: 400;
+    --www-soscalemedia-se-semantic-heading-2-underline-upper-font-size: 12.90625px;
+    --www-soscalemedia-se-semantic-heading-2-underline-upper-letter-spacing: 0px;
+    --www-soscalemedia-se-semantic-heading-2-underline-upper-line-height: 16px;
+    --www-soscalemedia-se-semantic-heading-2-underline-upper-font-style: normal;
+    --www-soscalemedia-se-semantic-heading-2-upper-font-family: "JetBrains Mono",
+      Helvetica;
+    --www-soscalemedia-se-semantic-heading-2-upper-font-weight: 300;
+    --www-soscalemedia-se-semantic-heading-2-upper-font-size: 13px;
+    --www-soscalemedia-se-semantic-heading-2-upper-letter-spacing: -0.5px;
+    --www-soscalemedia-se-semantic-heading-2-upper-line-height: 10.920000076293945px;
+    --www-soscalemedia-se-semantic-heading-2-upper-font-style: normal;
+    --www-soscalemedia-se-semantic-link-font-family: "JetBrains Mono", Helvetica;
+    --www-soscalemedia-se-semantic-link-font-weight: 200;
+    --www-soscalemedia-se-semantic-link-font-size: 11px;
+    --www-soscalemedia-se-semantic-link-letter-spacing: 0px;
+    --www-soscalemedia-se-semantic-link-line-height: 12px;
+    --www-soscalemedia-se-semantic-link-font-style: normal;
+    --www-soscalemedia-se-semantic-link-upper-font-family: "Arial", Helvetica;
+    --www-soscalemedia-se-semantic-link-upper-font-weight: 400;
+    --www-soscalemedia-se-semantic-link-upper-font-size: 12px;
+    --www-soscalemedia-se-semantic-link-upper-letter-spacing: 0.10000000149011612px;
+    --www-soscalemedia-se-semantic-link-upper-line-height: 15px;
+    --www-soscalemedia-se-semantic-link-upper-font-style: normal;
+    --www-soscalemedia-se-arial-regular-font-family: "Arial", Helvetica;
+    --www-soscalemedia-se-arial-regular-font-weight: 400;
+    --www-soscalemedia-se-arial-regular-font-size: 13.234375px;
+    --www-soscalemedia-se-arial-regular-letter-spacing: 0px;
+    --www-soscalemedia-se-arial-regular-line-height: 17px;
+    --www-soscalemedia-se-arial-regular-font-style: normal;
+    --www-soscalemedia-se-arial-regular-upper-font-family: "Arial", Helvetica;
+    --www-soscalemedia-se-arial-regular-upper-font-weight: 400;
+    --www-soscalemedia-se-arial-regular-upper-font-size: 268.79998779296875px;
+    --www-soscalemedia-se-arial-regular-upper-letter-spacing: 0px;
+    --www-soscalemedia-se-arial-regular-upper-line-height: 268.79998779296875px;
+    --www-soscalemedia-se-arial-regular-upper-font-style: normal;
+  }
+  

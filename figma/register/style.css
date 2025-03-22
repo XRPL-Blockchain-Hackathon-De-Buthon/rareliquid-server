@@ -1,0 +1,333 @@
+.page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .page .div {
+    background-color: #ffffff;
+    width: 1920px;
+    height: 1600px;
+    position: relative;
+  }
+  
+  .page .overlap {
+    position: absolute;
+    width: 1920px;
+    height: 1247px;
+    top: 353px;
+    left: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .page .card {
+    position: absolute;
+    width: 1128px;
+    height: 212px;
+    top: 127px;
+    left: 399px;
+  }
+  
+  .page .overlap-group {
+    position: relative;
+    width: 1122px;
+    height: 212px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  
+  .page .text-wrapper {
+    position: absolute;
+    width: 200px;
+    top: 42px;
+    left: 218px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 23px;
+    letter-spacing: -0.46px;
+    line-height: normal;
+  }
+  
+  .page .nike-x-drake-nocta {
+    position: absolute;
+    width: 792px;
+    top: 72px;
+    left: 218px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 25px;
+    letter-spacing: -0.50px;
+    line-height: 37.5px;
+  }
+  
+  .page .span {
+    color: #000000;
+    letter-spacing: -0.12px;
+  }
+  
+  .page .text-wrapper-2 {
+    color: #9f9f9f;
+    font-size: 20px;
+    letter-spacing: -0.08px;
+    line-height: 30px;
+  }
+  
+  .page .overlap-2 {
+    position: absolute;
+    width: 157px;
+    height: 157px;
+    top: 27px;
+    left: 32px;
+    background-color: #f3e8ef;
+    border-radius: 10px;
+    background-image: url(./img/image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .page .text-wrapper-3 {
+    position: absolute;
+    width: 200px;
+    top: 144px;
+    left: 218px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: -0.50px;
+    line-height: normal;
+  }
+  
+  .page .overlap-3 {
+    position: absolute;
+    width: 1122px;
+    height: 352px;
+    top: 371px;
+    left: 399px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  
+  .page .rectangle-wrapper {
+    position: absolute;
+    width: 1063px;
+    height: 77px;
+    top: 76px;
+    left: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .page .rectangle {
+    position: relative;
+    width: 179px;
+    height: 48px;
+    top: 13px;
+    left: 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .page .rectangle-2 {
+    position: absolute;
+    width: 1063px;
+    height: 77px;
+    top: 234px;
+    left: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .page .header {
+    position: absolute;
+    width: 1824px;
+    height: 311px;
+    top: 36px;
+    left: 60px;
+    background-color: transparent;
+  }
+  
+  .page .header-RARELIQUID {
+    position: absolute;
+    top: 0;
+    left: 19px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-HOME {
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-NEW {
+    position: absolute;
+    top: 0;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-BEST {
+    position: absolute;
+    top: 19px;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-BRAND {
+    position: absolute;
+    top: 38px;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-MEN {
+    position: absolute;
+    top: 0;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-WOMEN {
+    position: absolute;
+    top: 19px;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-UNISEX {
+    position: absolute;
+    top: 38px;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-SHOES {
+    position: absolute;
+    top: 0;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-CLOTHES {
+    position: absolute;
+    top: 19px;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-LUXURY {
+    position: absolute;
+    top: 38px;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .icon {
+    position: absolute;
+    width: 159px;
+    height: 24px;
+    top: 2px;
+    left: 1641px;
+  }
+  
+  .page .icon-menu {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 135px;
+  }
+  
+  .page .icon-search {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .icon-shop {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 45px;
+  }
+  
+  .page .icon-profile {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 90px;
+  }
+  
+  .page .group {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+  }
+  

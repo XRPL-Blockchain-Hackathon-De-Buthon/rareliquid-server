@@ -1,0 +1,750 @@
+.page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .page .div {
+    background-color: #ffffff;
+    width: 1920px;
+    height: 1600px;
+    position: relative;
+  }
+  
+  .page .overlap {
+    position: absolute;
+    width: 1824px;
+    height: 1021px;
+    top: 36px;
+    left: 60px;
+  }
+  
+  .page .overlap-group {
+    position: absolute;
+    width: 1824px;
+    height: 1021px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .img-shoes {
+    position: absolute;
+    width: 832px;
+    height: 832px;
+    top: 189px;
+    left: 8px;
+  }
+  
+  .page .overlap-group-2 {
+    position: relative;
+    height: 832px;
+  }
+  
+  .page .rectangle {
+    position: absolute;
+    width: 832px;
+    height: 630px;
+    top: 153px;
+    left: 0;
+    background-color: #f0eff8;
+    border-radius: 5px;
+  }
+  
+  .page .image {
+    position: absolute;
+    width: 832px;
+    height: 832px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .page .icon-arrow {
+    width: 773px;
+    top: 451px;
+    left: 30px;
+    position: absolute;
+    height: 35px;
+  }
+  
+  .page .icon-arrow-back-ios {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .icon-arrow-forward {
+    width: 35px;
+    top: 0;
+    left: 738px;
+    position: absolute;
+    height: 35px;
+  }
+  
+  .page .header {
+    position: absolute;
+    width: 1824px;
+    height: 311px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+  
+  .page .header-RARELIQUID {
+    position: absolute;
+    top: 0;
+    left: 19px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-HOME {
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-NEW {
+    position: absolute;
+    top: 0;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-BEST {
+    position: absolute;
+    top: 19px;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-BRAND {
+    position: absolute;
+    top: 38px;
+    left: 162px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-MEN {
+    position: absolute;
+    top: 0;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-WOMEN {
+    position: absolute;
+    top: 19px;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-UNISEX {
+    position: absolute;
+    top: 38px;
+    left: 309px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-SHOES {
+    position: absolute;
+    top: 0;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-CLOTHES {
+    position: absolute;
+    top: 19px;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .header-LUXURY {
+    position: absolute;
+    top: 38px;
+    left: 451px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+  }
+  
+  .page .icon {
+    position: absolute;
+    width: 159px;
+    height: 24px;
+    top: 2px;
+    left: 1635px;
+  }
+  
+  .page .icon-menu {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 135px;
+  }
+  
+  .page .icon-search {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .icon-shop {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 45px;
+  }
+  
+  .page .icon-profile {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 90px;
+  }
+  
+  .page .group {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+  }
+  
+  .page .smalltext {
+    position: absolute;
+    width: 836px;
+    height: 65px;
+    top: 905px;
+    left: 885px;
+  }
+  
+  .page .group-2 {
+    position: absolute;
+    width: 116px;
+    height: 63px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .text-wrapper {
+    top: 0;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #909090;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .element {
+    top: 47px;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #00b64c;
+    font-size: 11px;
+    letter-spacing: -0.22px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .span {
+    letter-spacing: -0.02px;
+  }
+  
+  .page .text-wrapper-2 {
+    font-size: 13px;
+    letter-spacing: -0.03px;
+  }
+  
+  .page .text-wrapper-3 {
+    top: 18px;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #373737;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .group-3 {
+    position: absolute;
+    width: 116px;
+    height: 47px;
+    top: 0;
+    left: 156px;
+  }
+  
+  .page .group-4 {
+    position: absolute;
+    width: 165px;
+    height: 47px;
+    top: 0;
+    left: 314px;
+  }
+  
+  .page .group-5 {
+    position: absolute;
+    width: 107px;
+    height: 47px;
+    top: 0;
+    left: 521px;
+  }
+  
+  .page .group-6 {
+    position: absolute;
+    width: 170px;
+    height: 47px;
+    top: 0;
+    left: 670px;
+  }
+  
+  .page .line {
+    position: absolute;
+    width: 1px;
+    height: 63px;
+    top: 2px;
+    left: 133px;
+    object-fit: cover;
+  }
+  
+  .page .img {
+    position: absolute;
+    width: 1px;
+    height: 63px;
+    top: 2px;
+    left: 291px;
+    object-fit: cover;
+  }
+  
+  .page .line-2 {
+    position: absolute;
+    width: 1px;
+    height: 63px;
+    top: 2px;
+    left: 498px;
+    object-fit: cover;
+  }
+  
+  .page .line-3 {
+    position: absolute;
+    width: 1px;
+    height: 63px;
+    top: 2px;
+    left: 647px;
+    object-fit: cover;
+  }
+  
+  .page .button {
+    position: absolute;
+    width: 904px;
+    height: 71px;
+    top: 808px;
+    left: 885px;
+  }
+  
+  .page .button-buy {
+    position: absolute;
+    width: 445px;
+    height: 71px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .div-wrapper {
+    position: relative;
+    width: 443px;
+    height: 71px;
+    background-color: #5f38ff;
+    border-radius: 8px;
+  }
+  
+  .page .text-wrapper-4 {
+    width: 205px;
+    height: 52px;
+    top: 9px;
+    left: 119px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.48px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .button-sell {
+    position: absolute;
+    width: 445px;
+    height: 71px;
+    top: 0;
+    left: 461px;
+  }
+  
+  .page .overlap-2 {
+    position: relative;
+    width: 443px;
+    height: 71px;
+    background-color: #615984;
+    border-radius: 8px;
+  }
+  
+  .page .price {
+    position: absolute;
+    width: 785px;
+    height: 157px;
+    top: 628px;
+    left: 879px;
+  }
+  
+  .page .overlap-3 {
+    position: relative;
+    width: 781px;
+    height: 157px;
+  }
+  
+  .page .text-wrapper-5 {
+    top: 0;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: -0.30px;
+    white-space: nowrap;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .text-wrapper-6 {
+    position: absolute;
+    width: 781px;
+    top: 4px;
+    left: 0;
+    font-family: "Pretendard Variable-Black", Helvetica;
+    font-weight: 900;
+    color: #000000;
+    font-size: 128px;
+    letter-spacing: -2.56px;
+    line-height: normal;
+  }
+  
+  .page .productname {
+    position: absolute;
+    width: 916px;
+    height: 139px;
+    top: 342px;
+    left: 879px;
+  }
+  
+  .page .text-wrapper-7 {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: -0.30px;
+    line-height: normal;
+  }
+  
+  .page .overlap-4 {
+    position: absolute;
+    width: 910px;
+    height: 86px;
+    top: 22px;
+    left: 0;
+  }
+  
+  .page .asics-x-kiko {
+    position: absolute;
+    width: 910px;
+    top: 0;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: -0.72px;
+    line-height: normal;
+  }
+  
+  .page .icon-heart {
+    position: absolute;
+    width: 29px;
+    height: 27px;
+    top: 8px;
+    left: 873px;
+  }
+  
+  .page .p {
+    position: absolute;
+    top: 121px;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #909090;
+    font-size: 15px;
+    letter-spacing: -0.30px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .page .marketprice {
+    position: absolute;
+    width: 906px;
+    height: 402px;
+    top: 1098px;
+    left: 945px;
+  }
+  
+  .page .marketpricetable {
+    position: absolute;
+    width: 914px;
+    height: 52px;
+    top: 34px;
+    left: 0;
+  }
+  
+  .page .overlap-group-3 {
+    position: relative;
+    width: 904px;
+    height: 52px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .page .overlap-5 {
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    top: 0;
+    left: 723px;
+  }
+  
+  .page .rectangle-2 {
+    position: absolute;
+    width: 173px;
+    height: 42px;
+    top: 5px;
+    left: 3px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .page .text-wrapper-8 {
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: -0.42px;
+    line-height: normal;
+  }
+  
+  .page .text-wrapper-9 {
+    width: 181px;
+    height: 52px;
+    top: 0;
+    left: 181px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: -0.42px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .text-wrapper-10 {
+    width: 180px;
+    height: 52px;
+    top: 0;
+    left: 362px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: -0.42px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .text-wrapper-11 {
+    width: 181px;
+    height: 52px;
+    top: 0;
+    left: 542px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: -0.42px;
+    position: absolute;
+    line-height: normal;
+  }
+  
+  .page .img-pricetable {
+    position: absolute;
+    width: 901px;
+    height: 270px;
+    top: 132px;
+    left: 0;
+  }
+  
+  .page .overlap-6 {
+    position: relative;
+    width: 900px;
+    height: 272px;
+    top: -2px;
+    left: -1px;
+  }
+  
+  .page .vector {
+    position: absolute;
+    width: 899px;
+    height: 270px;
+    top: 2px;
+    left: 1px;
+  }
+  
+  .page .vector-2 {
+    position: absolute;
+    width: 900px;
+    height: 272px;
+    top: 0;
+    left: 0;
+  }
+  
+  .page .line-4 {
+    position: absolute;
+    width: 3px;
+    height: 38px;
+    top: 82px;
+    left: 806px;
+  }
+  
+  .page .rectangle-3 {
+    position: absolute;
+    width: 158px;
+    height: 45px;
+    top: 104px;
+    left: 727px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 3px solid;
+    border-color: #ded6ff;
+  }
+  
+  .page .element-2 {
+    position: absolute;
+    top: 116px;
+    left: 759px;
+    font-family: "Pretendard Variable-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .page .text-wrapper-12 {
+    letter-spacing: -0.08px;
+  }
+  
+  .page .text-wrapper-13 {
+    letter-spacing: 0.24px;
+  }
+  
+  .page .ellipse {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 73px;
+    left: 800px;
+    background-color: #ffffff;
+    border-radius: 7.5px;
+    border: 3px solid;
+    border-color: #ded6ff;
+  }
+  
