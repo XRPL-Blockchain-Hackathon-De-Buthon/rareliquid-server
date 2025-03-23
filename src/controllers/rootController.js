@@ -113,6 +113,7 @@ export const postUploadProduct = async (req, res) => {
       imageUrl,
       owner: req.user._id,
     });
+    console.log(rwaToken);
 
     // 사용자 모델에 상품 토큰 추가
     await User.findByIdAndUpdate(req.user._id, {
