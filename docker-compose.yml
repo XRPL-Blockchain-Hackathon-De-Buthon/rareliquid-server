@@ -8,8 +8,8 @@ services:
       dockerfile: Dockerfile
     container_name: ecommerce-app
     restart: always
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     volumes:
       - ./:/app
       - /app/node_modules
@@ -36,6 +36,23 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
+    networks:
+      - app-network
+      
+  # NGINX service with HTTPS
+  nginx:
+    image: nginx:latest
+    container_name: ecommerce-nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+      - ./nginx/html:/usr/share/nginx/html
+      - /etc/letsencrypt:/etc/letsencrypt:ro  # 로컬 인증서 경로를 마운트 (읽기 전용)
+    depends_on:
+      - app
     networks:
       - app-network
 
