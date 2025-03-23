@@ -103,6 +103,13 @@ export const postUploadProduct = async (req, res) => {
       imageUrl = `/images/${imageFile.filename}`;
     }
 
+    // 이미지 URL 생성 (API 엔드포인트용)
+    const imageApiUrl = imageFile
+      ? `${req.protocol}://${req.get("host")}/api/getImage?url=${
+          imageFile.filename
+        }`
+      : null;
+
     // 새 상품 생성
     const newProduct = await Product.create({
       rwaToken,
@@ -112,6 +119,11 @@ export const postUploadProduct = async (req, res) => {
       category,
       imageUrl,
       owner: req.user._id,
+      public_endpoint: {
+        name,
+        description,
+        image: imageApiUrl,
+      },
     });
     console.log(rwaToken);
 

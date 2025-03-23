@@ -7,6 +7,7 @@ import MongoStore from "connect-mongo";
 import passport from "passport";
 import rootRouter from "./routers/rootRouter.js";
 import authRouter from "./routers/authRouter.js";
+import apiRouter from "./routers/apiRouter.js";
 import configurePassport from "./oauth/passport.js";
 import { localsMiddleware } from "./middlewares/auth.js";
 
@@ -48,6 +49,7 @@ app.use(passport.session());
 app.use(localsMiddleware);
 
 // 라우트 설정
+app.use("/api", apiRouter);
 app.use("/auth", authRouter);
 app.use("/", rootRouter);
 

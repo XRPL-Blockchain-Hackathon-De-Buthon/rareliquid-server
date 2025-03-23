@@ -9,6 +9,11 @@ const productSchema = new mongoose.Schema({
   imageUrl: { type: String, trim: true },
   category: { type: String, trim: true },
   owner: { type: String, required: true, trim: true },
+  public_endpoint: {
+    name: { type: String, trim: true },
+    description: { type: String, trim: true },
+    image: { type: String, trim: true },
+  },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
