@@ -1,6 +1,6 @@
 # RareLiquid
 
-![RareLiquid Logo](https://via.placeholder.com/800x200?text=RareLiquid)
+![RareLiquid](image/main.png)
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![XRPL](https://img.shields.io/badge/Blockchain-XRPL_EVM-green.svg)](https://xrpl.org/)
